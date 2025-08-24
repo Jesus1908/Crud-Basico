@@ -12,12 +12,12 @@
 
         <div class="mb-3">
           <label for="nombre">Nombre del paciente</label>
-          <input type="text" class="form-control" name="nombre" id="nombre" autofocus required>
+          <input type="text" class="form-control" name="nombre" id="nombre" autofocus required minlength="3" maxlength="100">
         </div>
 
         <div class="mb-3">
           <label for="dni">DNI</label>
-          <input type="text" class="form-control" name="dni" id="dni" required>
+          <input type="text" class="form-control" name="dni" id="dni" required pattern="[0-8]{7}" title="El DNI debe contener 7 números">
         </div>
 
         <div class="mb-3">
@@ -27,7 +27,7 @@
 
         <div class="mb-3">
           <label for="expediente">Adjuntar expediente</label>
-          <input type="file" class="form-control" name="expediente" id="expediente">
+          <input type="file" class="form-control" name="expediente" id="expediente" accept=".pdf,.jpg,.png">
         </div>
 
       </div>
