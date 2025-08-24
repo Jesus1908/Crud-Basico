@@ -1,4 +1,4 @@
-Un gusto instructor, quería comentarle que en durante el desarrollo del proyecto me di cuenta de un
+Un gusto instructor, quería comentarle que durante el desarrollo del proyecto me di cuenta de un
 error en el diseño inicial de la base de datos.
 
 Al principio planteé las tablas de forma más simple, pero ahora durante en el desarrollo me di cuenta 
@@ -6,4 +6,5 @@ que la relación correcta entre pacientes y enfermedades debe ser muchos a mucho
 puede tener varias enfermedades y una enfermedad puede afectar a varios pacientes.
 
 A pesar de este detalle, quise presentar lo que había avanzado para mostrar el funcionamiento y la
+
 lógica implementada hasta ahora. 
