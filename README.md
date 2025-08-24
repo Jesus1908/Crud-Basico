@@ -3,8 +3,11 @@
 Este proyecto es una aplicación web desarrollada en **PHP** utilizando el framework **CodeIgniter 4**.  
 Su objetivo principal es permitir la gestión de pacientes y sus enfermedades de manera sencilla y eficiente.
 
-## 🚀 Ruta inicial del proyecto
-👉 [http://crud-basico.test/]  
+# 📄 Consideraciones
+[consideraciones.txt](consideraciones.txt)
+
+## Acceso a la base de datos(clinica.sql)
+App > Database > clinica.sql
 
 ## Características principales
 - ✅ Registro de pacientes.  
