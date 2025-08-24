@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\Libro;
 use App\Models\Paciente;
 
 class PacienteController extends BaseController
@@ -14,6 +13,9 @@ class PacienteController extends BaseController
     $paciente = new Paciente();
 
     $datos['pacientes'] = $paciente->orderBy('idpaciente', 'ASC')->findAll();
+    
+    $datos['header'] = view('Layouts/header');
+    $datos['footer'] = view('Layouts/footer');
 
     return view('pacientes/listar', $datos);
   }

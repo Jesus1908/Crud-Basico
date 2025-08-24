@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 </head>
 <body>
-  <!-- Sección 1: Cabecera -->
   <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Clinica</a>
@@ -20,16 +19,14 @@
           <a class="nav-link active" aria-current="page" href="<?= base_url(); ?>">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url("libros"); ?>">Pacientes</a>
+          <a class="nav-link" href="<?= base_url("pacientes"); ?>">Pacientes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('editoriales'); ?>">Enfermedades</a>
+          <a class="nav-link" href="<?= base_url('enfermedades'); ?>">Enfermedades</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<!-- Fin sección 1 -->
 
-<!-- Sección 2 -->
 <main>
