@@ -3,7 +3,7 @@
 namespace App\Models;
 use CodeIgniter\Model;
 
-class Libro extends Model{
+class Paciente extends Model{
 
   protected $table = 'pacientes';
   protected $primaryKey = "idpaciente";
