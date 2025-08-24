@@ -3,7 +3,6 @@
 <div class="container mt-2">
   <div class="my-2">
     <h4>Registro de Paciente</h4>
-    <a href="<?= base_url("pacientes"); ?>">Volver</a>
   </div>
 
   <form method="POST" action="<?= base_url('pacientes/guardar') ?>" enctype="multipart/form-data">
@@ -32,7 +31,7 @@
 
       </div>
       <div class="card-footer text-end">
-        <button type="reset" class="btn btn-sm btn-outline-secondary">Cancelar</button>
+        <a href="<?= base_url('pacientes') ?>" class="btn btn-sm btn-outline-secondary">Cancelar</a>
         <button type="submit" class="btn btn-sm btn-primary">Guardar</button>
       </div>
     </div>

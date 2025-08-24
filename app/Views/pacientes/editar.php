@@ -3,7 +3,6 @@
 <div class="container mt-2">
   <div class="my-2">
     <h4>Editar Paciente</h4>
-    <a href="<?= base_url("pacientes"); ?>">Volver</a>
   </div>
 
   <form method="POST" action="<?= base_url('pacientes/actualizar') ?>" enctype="multipart/form-data">
