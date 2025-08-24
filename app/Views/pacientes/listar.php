@@ -3,17 +3,17 @@
 <div class="container mt-2">
   <div class="my-2">
     <h4>Lista de pacientes</h4>
-    <a href="<?= base_url("pacientes/crear"); ?>">Registrar</a>
   </div>
 
   <div class="table-resposive">
     <table class="table table-sm">
       <colgroup>
+        <col width="10%">
+        <col width="10%">
         <col width="15%">
-        <col width="20%">
-        <col width="30%">
-        <col width="20%">
         <col width="15%">
+        <col width="10%">
+        <col width="20%">
       </colgroup>
       <thead>
         <tr>
@@ -22,6 +22,7 @@
           <th>Dni</th>
           <th>Correo</th>
           <th>Expediente</th>
+          <th>Acciones</th>
         </tr>
       </thead>
       <tbody>
@@ -31,19 +32,20 @@
         <tr class="align-middle">
           <td><?= $paciente['idpaciente'] ?></td>
           <td><?= $paciente['nombre'] ?></td>
+          <td><?= $paciente['dni'] ?></td>
+          <td><?= $paciente['correo'] ?></td>
           <td>
-            <img src="<?= base_url("uploads/") ?><?= $libro['imagen'] ?>" alt="Expediente" class="img-thumbnail" style="width: 120px">
+            <img src="<?= base_url("uploads/") ?><?= $paciente['expediente'] ?>" alt="Expediente" class="img-thumbnail" style="width: 120px">
           </td>
           <td>
-            <a href="<?= base_url('pacientes/borrar/') ?><?= $libro['idpaciente'] ?>" class="btn btn-sm btn-danger">Eliminar</a>
-            <a href="<?= base_url('pacientes/editar/') ?><?= $libro['idpaciente'] ?>" class="btn btn-sm btn-info">Editar</a>
+            <a href="<?= base_url('pacientes/borrar/') ?><?= $paciente['idpaciente'] ?>" class="btn btn-sm btn-danger">Eliminar</a>
+            <a href="<?= base_url('pacientes/editar/') ?><?= $paciente['idpaciente'] ?>" class="btn btn-sm btn-info">Editar</a>
           </td>
         </tr>
         <?php endforeach; ?>
       </tbody>
     </table>
+        <a href="<?= base_url("pacientes/crear"); ?>">Registrar</a>
   </div>
-
 </div>
-
 <?= $footer; ?>
